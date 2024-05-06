@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Contact from "../components/home/contact/Contact.astro";
+import Footer from "../components/shared/Footer.astro";
+import FAQ from "../components/info/faq/FAQ.astro";
+import Header from "../components/services/hero/Header.astro";
+import Quality from "../components/services/quality/Quality.astro";
+import Company from "../components/services/company/Company.astro";
+import ServiceSection from "../components/services/service/ServiceSection.astro";
+import Testimonials from "../components/services/testimonials/Testimonials.astro";
+
+const links = [
+	{ href: '#services', text: 'Servicios' },
+	{ href: '#testimonials', text: 'Testimonios' },
+	{ href: '#faq', text: 'Preguntas Frecuentes' },
+	{ href: '#contact', text: 'Contacto' },
+];
+---
+
+<Layout title="Conectividad Global">
+	<main>
+		<Header />
+		<Quality />
+		<Company />
+		<ServiceSection />
+		<Testimonials />
+		<FAQ />
+		<Contact />
+		<Footer
+			links={links}
+		/>
+	</main>
+</Layout>

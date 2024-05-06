@@ -1,0 +1,155 @@
+---
+import Button from "../../shared/Button.astro";
+import ServiceCard from "./ServiceCard.astro";
+---
+
+<section class="service" id="service">
+    <div class="service-top">
+        <div class="service-top-left">
+            <h3>Nuestros Servicios</h3>
+            <h1>Conoce todas las posibilidades que ofrecemos en diferentes medios.</h1>
+        </div>
+        <div class="service-top-right">
+            <p>We have 26+ other services</p>
+            <Button
+                text="Descubre Más"
+                color="dark"
+                link="/services"
+            />
+        </div>
+    </div>
+    <div class="service-bottom">
+        <div class="service-cards">
+            <ServiceCard
+                    title="Medios ATL"
+                    text="Alcanzamos un público amplio través de medios de comunicación masivos como la televisión, la radio y la prensa. "
+                    color="#F5FDEB"
+                    link="/services"
+                    index="01"
+            />
+            <ServiceCard
+                    title="Medios BTL"
+                    text="Conectamos emocionalmente con las audiencias a través de eventos promocionales, marketing directo y patrocinios"
+                    color="#EBECFD"
+                    link="/services"
+                    index="02"
+            />
+            <ServiceCard
+                    title="Medios OOH"
+                    text="Llevamos tu mensaje publicitario a escenarios no tradicionales como transporte público, espacios urbanos y vallas. "
+                    color="#EBFAFD"
+                    link="/services"
+                    index="03"
+            />
+        </div>
+        <div class="service-cards">
+            <ServiceCard
+                    title="Marketing Digital"
+                    text="Impulsamos tu presencia digital a través de SEO, SEM y Redes Sociales para llegar a tu audiencia de forma efectiva."
+                    color="#F5FDEB"
+                    link="/services"
+                    index="04"
+            />
+            <ServiceCard
+                    title="Diseño e innovación"
+                    text="Creamos conceptos visualmente impactante y altamente creativo, que destaquen la identidad de tu marca."
+                    color="#EBECFD"
+                    link="/services"
+                    index="05"
+            />
+            <ServiceCard
+                    title="Marketing en Redes Sociales"
+                    text="Construimos de forma eficaz relaciones con tu audiencia y establecer tu marca como líder de opinión en su industria."
+                    color="#EBFAFD"
+                    link="/services"
+                    index="06"
+            />
+        </div>
+    </div>
+</section>
+
+<style>
+    .service
+    {
+        height: 110vh;
+        padding: 65px 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .service-top
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .service-top-left
+    {
+        flex-basis: 50%;
+    }
+
+    .service-top-right
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-basis: 40%;
+        gap: 15px;
+    }
+
+    .service-top-right p
+    {
+        color: #142133;
+        font-size: 16px;
+        font-weight: 200;
+    }
+
+    .service-bottom
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-cards
+    {
+        display: flex;
+        justify-content: space-between;
+        gap: 70px;
+    }
+
+    h1
+    {
+        font-size: 35px;
+        font-weight: 700;
+        color: #000;
+    }
+
+    h3
+    {
+        color: #8493B6;
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    /*Mobile*/
+    @media (max-width: 768px)
+    {
+
+    }
+
+    /*Tablets*/
+    @media screen and (min-width: 768px) and (max-width: 1024px)
+    {
+
+    }
+
+    /*Desktop*/
+    @media screen and (min-width: 1500px)
+    {
+
+    }
+</style>

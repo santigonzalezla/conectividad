@@ -1,0 +1,112 @@
+---
+import ServicesList from "../../react-components/ServicesList";
+
+const accordionItems = [
+    {
+        title: 'Medios ATL',
+        content: 'Alcanzamos un público amplio a través de medios de comunicación masivos como la televisión, la radio y la prensa. Estos canales ofrecen una plataforma robusta y ampliamente accesible para difundir mensajes publicitarios a audiencias de diversos perfiles. Todo esto nos permite contar historias cautivadoras y presentar productos de una manera visualmente impactante. ',
+        features: [
+            'Alcance Másivo',
+            'Construcción de Marca',
+            'Impacto Visual y Auditivo'
+        ],
+        image: 'https://i.imgur.com/IkaHLvP.png'
+    },
+    {
+        title: 'Medios BTL',
+        content: 'Nos especializamos en conectar emocionalmente con las audiencias a través de una variedad de tácticas creativas y cercanas, conocidas como medios BTL (Below The Line). Estos medios nos permiten salir de los escenarios tradicionales y sumergirnos directamente en la vida cotidiana de las personas.',
+        features: [
+            'Interacción Directa',
+            'Segmentación Específica',
+            'Medición de Resultados'
+        ],
+        image: 'https://i.imgur.com/IkaHLvP.png'
+    },
+    {
+        title: 'Medios OOH',
+        content: 'Nos especializamos en la difusión de tu mensaje publicitario en entornos no convencionales mediante los medios OOH (Out Of Home). Estos canales nos permiten colocar estratégicamente tus anuncios en lugares inesperados pero altamente transitados, como el transporte público, áreas urbanas concurridas y vallas publicitarias prominentes.',
+        features: [
+            'Alcance Masivo',
+            'Impacto Visual',
+            'Flexibilidad'
+        ],
+        image: 'https://i.imgur.com/IkaHLvP.png'
+    },
+    {
+        title: 'Marketing Digital',
+        content: 'Nos especializamos en potenciar tu presencia digital a través de estrategias sólidas y efectivas en SEO (Search Engine Optimization), SEM (Search Engine Marketing) y Redes Sociales. Estas tres herramientas clave son pilares fundamentales para garantizar que tu marca destaque en el vasto paisaje digital.',
+        features: [
+            'Interactividad y Participación del Usuario',
+            'Segmentación Precisa',
+            'Medición y Análisis Detallados'
+        ],
+        image: 'https://i.imgur.com/IkaHLvP.png'
+    },
+    {
+        title: 'Diseño e innovación',
+        content: 'Creamos conceptos visualmente impactante y altamente creativo, que destaquen la identidad de tu marca. Estrategicamente destamos los contendidos, para que tengan algo mas que contar, que les genere valor a todos los niveles de la corporación.',
+        features: [
+            'Creatividad Visual Impactante',
+            'Contenido Estratégicamente Destacado',
+            'Innovación Constante'
+        ],
+        image: 'https://i.imgur.com/IkaHLvP.png'
+    }
+];
+---
+
+<section class="service">
+    <div class="service-top">
+        <div class="service-top-title">
+            <h4>Nuestros Servicios</h4>
+            <h2>Damos valor a tu negocio usando de métodos eficientes</h2>
+        </div>
+        <p>
+            Ofrecemos una amplia gama de servicios para elevar la visibilidad y el impacto de tu negocio en el mercado. Desde la penetración masiva de Medios ATL (Above The Line) hasta la precisión estratégica de Medios BTL (Below The Line), pasando por la creatividad audaz de los Medios OOH (Out Of Home), nos especializamos en conectar tu marca con tu audiencia de manera efectiva y memorable.
+        </p>
+    </div>
+    <ServicesList
+        client:visible
+        items={accordionItems}
+    />
+</section>
+
+<style>
+    .service
+    {
+        height: 180vh;
+        padding: 70px 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .service-top
+    {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: 150px;
+    }
+
+    .service-top-title,
+    .service-top p
+    {
+        flex-basis: 50%;
+    }
+
+    .service-top-title h4
+    {
+        color: #8493B6;
+        font-size: 28px;
+    }
+
+    .service-top-title h2
+    {
+        font-size: 40px;
+        font-weight: 700;
+        color: #142133;
+    }
+</style>
